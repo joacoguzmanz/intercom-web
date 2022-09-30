@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/layout';
 // import { StaticImage } from 'gatsby-plugin-image';
 import Hero from '../components/Hero';
+import Services from '../components/Services';
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,8 @@ const IndexPage = () => {
         de la reparación e instalación de comunicación y vigilancia para
         consorcios.'
       />
+
+      <Services />
 
       {/* <StaticImage
         alt='Dogo looking at camera'

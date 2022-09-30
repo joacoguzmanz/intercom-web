@@ -1,0 +1,34 @@
+.card {
+  padding: 1.2rem;
+  /* text-align: center; */
+  color: #333;
+  border-radius: 5px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  flex: 1;
+}
+
+.card:hover .card-icon {
+  color: #ffac1c;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.8rem;
+  transition: color 250ms;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    max-width: 325px;
+  }
+}

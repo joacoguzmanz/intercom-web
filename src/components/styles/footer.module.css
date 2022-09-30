@@ -70,10 +70,3 @@
     align-self: flex-end;
   }
 }
-
-/* 
-@media only screen and (min-width: 1024px) {
-   .container {
-    padding: 0 120px;
-  } 
-} */
