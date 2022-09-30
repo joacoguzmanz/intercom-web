@@ -4,7 +4,7 @@ import { container } from './layout.module.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ children }) => {
   return (
     <div className={container}>
       <Navbar />
