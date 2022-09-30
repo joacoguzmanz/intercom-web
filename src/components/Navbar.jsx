@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className={navContainer}>
       <Link to='/' className={logo}>
-        InterCom
+        InterCom.
       </Link>
 
       <nav>

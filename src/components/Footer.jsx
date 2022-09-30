@@ -1,25 +1,45 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { footerContainer, logo } from './styles/footer.module.css';
+import {
+  footerContainer,
+  logo,
+  groupTitle,
+  groupLinks,
+  footerGroups,
+  divider,
+  copyright,
+  group,
+} from './styles/footer.module.css';
 
 const Footer = () => {
   return (
     <div className={footerContainer}>
+      <hr className={divider} />
       <Link to='/' className={logo}>
         InterCom.
       </Link>
+      <div className={footerGroups}>
+        <div className={group}>
+          <h3 className={groupTitle}>Contacto</h3>
+          <a href='mailto:arturogusman@hotmail.com' className={groupLinks}>
+            arturogusman@hotmail.com
+          </a>
+        </div>
 
-      <div>
-        <h3>Contacto</h3>
-        <a href='mailto:arturogusman@hotmail.com'>arturogusman@hotmail</a>
+        <div className={group}>
+          <h3 className={groupTitle}>Redes Sociales</h3>
+          <a
+            href='https://www.instagram.com/portero.electrico/'
+            target='_blank'
+            rel='noreferrer'
+            className={groupLinks}
+          >
+            Instagram
+          </a>
+        </div>
+
+        <p className={copyright}>&#169; 2022 InterCom. Porteros Eléctricos</p>
       </div>
-
-      <div>
-        <h3>Redes Sociales</h3>
-        <a href='https://www.instagram.com/portero.electrico/'>Instagram</a>
-      </div>
-
-      <p>&#169; 2022 InterCom. Porteros Eléctricos</p>
     </div>
   );
 };
