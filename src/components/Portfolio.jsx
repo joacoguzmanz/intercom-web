@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  //   portfolioCopy,
+  portfolioCopy,
   portfolioTitle,
   portfolioDescription,
 } from './styles/portfolio.module.css';
 
 const Portfolio = ({ title, description }) => {
   return (
-    <div>
+    <div className={portfolioCopy}>
       <h3 className={portfolioTitle}>{title}</h3>
       <p className={portfolioDescription}>{description}</p>
     </div>

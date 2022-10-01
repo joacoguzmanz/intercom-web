@@ -6,3 +6,10 @@
 .portfolio-description {
   line-height: 1.5;
 }
+
+@media only screen and (min-width: 640px) {
+  .portfolio-copy {
+    max-width: 50%;
+    padding-left: 5rem;
+  }
+}

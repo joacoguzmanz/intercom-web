@@ -14,9 +14,9 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero
-        heroText='Expertos en Porteros eléctricos, cámaras de seguridad y telefonía en
+        heroText='Porteros eléctricos, cámaras de seguridad y telefonía en ciudad de 
         Buenos Aires.'
-        heroSub='Más de 15 años de experiencia y numerosos clientes nos avalan en el área
+        heroSub='Nos respaldan 20 años de experiencia y numerosas obras en el área
         de la reparación e instalación de comunicación y vigilancia para
         consorcios.'
       />
