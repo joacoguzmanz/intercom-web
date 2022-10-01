@@ -17,9 +17,14 @@ const Navbar = () => {
       <nav>
         <ul className={navLinks}>
           <li>
-            <Link to='/contact' className={navLinkText}>
-              Contacto
-            </Link>
+            <a
+              href='https://wa.me/5491155116365'
+              target='_blank'
+              rel='noreferrer'
+              className={navLinkText}
+            >
+              WhatsApp
+            </a>
           </li>
         </ul>
       </nav>
