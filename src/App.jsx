@@ -6,7 +6,7 @@ import Contact from "./components/Contact.jsx";
 
 function App() {
   return (
-      <div className='bg-slate-100'>
+      <div className='bg-slate-100 scroll-smooth'>
           <Navbar />
           <Hero />
           <div id='empresa' className='py-32 md:py-52'>
