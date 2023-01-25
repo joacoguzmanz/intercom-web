@@ -74,7 +74,11 @@ const HeroRowTop = ({ title }) => {
 const HeroRowBottom = ({ title }) => {
     return (
         <div className='overflow-hidden flex items-center justify-center text-center'>
-            <a href='#contacto'>
+            <a href='#contacto' onClick={(e) => {
+                let element = document.getElementById('contacto');
+                e.preventDefault();
+                element.scrollIntoView({ behavior: "smooth" });
+            }}>
             <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ ease:[0.6, 0.01, -0.05, 0.95], duration: 1, delay: 1 }}
                 className='hidden md:block md:bg-white md:h-28 md:w-28 lg:h-40 lg:w-40 md:rounded-full md:flex md:justify-center md:items-center md:flex-col'>
                 <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ ease: 'easeInOut', duration: 1, delay: 1.8 }}
