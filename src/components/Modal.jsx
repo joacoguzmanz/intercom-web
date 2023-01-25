@@ -2,14 +2,14 @@ import Backdrop from "./Backdrop.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLocationDot, faXmark} from "@fortawesome/free-solid-svg-icons";
 
-const Modal = ({ handleClose, name, location, text }) => {
+const Modal = ({ handleClose, name, location, text, image, alt }) => {
     return (
         <Backdrop onClick={handleClose}>
             <div
                 onClick={e => e.stopPropagation()}
                 className='px-9 py-11 z-[100] bg-white w-11/12 lg:max-w-screen-md mx-auto rounded-md flex flex-col items-center gap-5 md:flex-row md:gap-6 relative'>
                 <div className='md:w-6/12'>
-                    <img src='/imgs/buenos-aires.jpeg' alt={'Buenos Aires img'} className='rounded-sm' />
+                    <img src={`/imgs/${image}`} alt={alt} className='rounded-sm' />
                 </div>
                 <div className='md:w-6/12'>
                     <h4 className='font-medium text-2xl mb-2 md:mb-3.5 lg:text-3xl'>{ name }</h4>

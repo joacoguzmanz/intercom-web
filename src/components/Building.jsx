@@ -3,7 +3,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import Modal from "./Modal.jsx";
 
-const Building = ({ n, name, location, text }) => {
+const Building = ({ n, name, location, text, image, alt }) => {
     const [modalOpen, setModalOpen] = useState(false);
 
     const close = () => setModalOpen(false);
@@ -21,7 +21,7 @@ const Building = ({ n, name, location, text }) => {
                   <p className='text-sm font-medium'>{ location }</p>
               </div>
 
-              {modalOpen && <Modal handleClose={close} name={ name } location={ location } text={ text } />}
+              {modalOpen && <Modal handleClose={close} name={ name } location={ location } text={ text } image={ image } alt={ alt } />}
           </div>
     )
 }
