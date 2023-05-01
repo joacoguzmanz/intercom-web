@@ -13,8 +13,8 @@ const brands = [
 
 const BrandSlider = () => {
     return (
-        <div className='h-20 border-t border-b border-gray-600 overflow-hidden relative'>
-            <div className='w-[200%] flex items-center h-20 justify-around absolute left-0 animate animate'>
+        <div className='h-20 border-y border-gray-600 overflow-hidden relative'>
+            <div className='md:w-[200%] flex items-center gap-10 md:gap-0 h-20 justify-around absolute left-0 animate animate'>
                 {brands.map((brand, i) => {
                     return (
                         <div key={i} className='flex justify-center items-center w-24 h-12'>
