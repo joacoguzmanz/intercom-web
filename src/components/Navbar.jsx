@@ -51,11 +51,19 @@ const Navbar = () => {
             <Link href={'/'} className='text-xl md:text-3xl font-medium'>InterCom.</Link>
 
             <Menu isOpen={menuOpen}>
-                <HamMenu handleMenu={handleMenu} isOpen={menuOpen} />
-                <MenuItem title={'Empresa'} href={'/empresa'} />
-                <MenuItem title={'Servicios'} href={'/servicios'} />
-                <MenuItem title={'Trabajos'} href={'/trabajos'} />
-                <MenuItem title={'Contacto'} href={'/contacto'} />
+                <div className='mt-10 mx-5 flex justify-end'>
+                    <HamMenu handleMenu={handleMenu} isOpen={menuOpen} />
+                </div>
+                <div className='h-4/6 flex flex-col justify-center items-center gap-5 text-4xl font-bold mx-5'>
+                    <MenuItem title={'Empresa'} href={'/empresa'} />
+                    <MenuItem title={'Servicios'} href={'/servicios'} />
+                    <MenuItem title={'Trabajos'} href={'/trabajos'} />
+                    <MenuItem title={'Contacto'} href={'/contacto'} />
+                    <div className='flex gap-5 justify-center'>
+                        <a className='text-white text-4xl' href={'https://wa.me/5491155116365'} target='_blank'><FontAwesomeIcon icon={faWhatsapp} /></a>
+                        <a className='text-white text-4xl' href={'https://www.instagram.com/portero.electrico/'} target='_blank'><FontAwesomeIcon icon={faInstagram} /></a>
+                    </div>
+                </div>
             </Menu>
 
             <div className='text-3xl font-medium flex gap-5'>
