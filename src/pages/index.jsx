@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar.jsx";
+import Nav from "../components/navigation/Nav.jsx";
 import Hero from "../components/Hero.jsx";
 import Services from "../components/Services.jsx";
 import Clients from "../components/Clients.jsx";
@@ -8,7 +8,7 @@ import BrandSlider from "../components/BrandSlider.jsx";
 const HomePage = () => {
     return (
         <div className='relative scroll-smooth'>
-            <Navbar />
+            <Nav />
             <Hero />
             <BrandSlider />
             <div id='empresa' className='py-32 md:py-52'>

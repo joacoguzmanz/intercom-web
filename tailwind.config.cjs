@@ -22,6 +22,12 @@ module.exports = {
       },
       animation: {
         'marquee': 'marqueeAnim'
+      },
+      colors: {
+        'primary': '#FD5920',
+      },
+      boxShadow: {
+        'nav': 'rgba(0, 0, 0, 0.1) 0px 8px 16px 0px',
       }
     },
   },
