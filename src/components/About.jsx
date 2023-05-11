@@ -3,7 +3,7 @@ import AboutCard from "./AboutCard.jsx";
 const cardsInfo = [
     { preTitle: 'Estás en buenas manos', title: '20 años', desc: 'de experiencia en el rubro trabajando con consorcios y contando.' },
     { preTitle: 'Ya lo hemos hecho', title: '+2000', desc: 'trabajos realizados en los últimos 3 años entre reparaciones, instalaciones y obras.' },
-    { preTitle: 'Siempre mejorando', title: '3', desc: 'marcas nuevas reciente agragadas para instalación y reparación.' },
+    { preTitle: 'Siempre mejorando', title: '+140', desc: 'administraciones y consorcios de edificios confían en nosotros.' },
 ]
 
 const About = () => {

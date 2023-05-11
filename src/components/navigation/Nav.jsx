@@ -42,7 +42,7 @@ const Nav = () => {
 
     return (
         <div className='fixed z-50 w-full flex justify-center items-center'>
-            <div className='w-11/12 md:w-fit rounded-lg py-2.5 md:px-5 mt-5 md:mt-10 flex justify-between md:gap-20 md:shadow-nav bg-white relative'>
+            <div className='w-11/12 md:w-fit rounded-lg py-2.5 px-2.5 md:px-5 mt-5 md:mt-10 flex justify-between md:gap-20 md:shadow-nav bg-white relative'>
 
                 <p className='text-2xl font-bold'>InterCom.</p>
 
