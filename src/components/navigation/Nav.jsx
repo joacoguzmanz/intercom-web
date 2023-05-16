@@ -41,32 +41,26 @@ const Nav = () => {
     }
 
     return (
-        <div className='fixed z-50 w-full flex justify-center items-center'>
-            <div className='w-11/12 md:w-fit rounded-lg py-2.5 px-2.5 md:px-5 mt-5 md:mt-10 flex justify-between md:gap-20 md:shadow-nav bg-white relative'>
-
-                <p className='text-2xl font-bold'>InterCom.</p>
-
-                <div className='flex items-center gap-1 md:gap-15'>
-                    <nav className='hidden md:flex md:gap-2.5 md:mr-2.5'>
-                        <Link href={'/empresa'}>Empresa</Link>
-                        <Link href={'/servicios'}>Servicios</Link>
-                        <Link href={'/trabajos'}>Trabajos</Link>
-                    </nav>
-
-                    <button className='bg-primary text-white px-3 py-1.5 rounded-lg'>
-                        <Link href={'/contacto'}>Contacto</Link>
-                    </button>
-
-                    <HamMenu handleMenu={handleMenu} />
-
-                    <div className='hidden md:flex md:gap-1'>
-                        <a className='rounded-lg py-1.5 px-3 border hover:border-white hover:bg-gray-800 hover:text-white' href={'https://wa.me/5491155116365'} target='_blank'><FontAwesomeIcon icon={faWhatsapp} /></a>
-                        <a className='rounded-lg py-1.5 px-3 border hover:border-white hover:bg-gray-800 hover:text-white' href={'https://www.instagram.com/portero.electrico/'} target='_blank'><FontAwesomeIcon icon={faInstagram} /></a>
-                    </div>
-                </div>
-
-                <MenuMob menuOpen={menuOpen} />
+        <div className='fixed z-50 w-full'>
+            <div className='bg-[#D9E8F5] w-full px-5 md:px-16 lg:px-32 py-2.5 text-sm md:text-md flex justify-between md:justify-end md:gap-10'>
+                <a href={'mailto:arturogusman@hotmail.com'} className='text-[#304269]'>arturogusman@hotmail.com</a>
+                <a href={'https://wa.me/5491155116365'} target='_blank' className='text-[#304269]'>+54 9 11 6225-6864</a>
             </div>
+
+            <div className='px-5 md:px-16 lg:px-32 py-2.5 md:py-5 flex items-center justify-between gap-1 md:gap-15 bg-white'>
+                <Link href={'/'} className='text-2xl font-semibold'>InterCom.</Link>
+
+                <nav className='hidden md:flex md:gap-2.5 md:mr-2.5'>
+                    <Link href={'/empresa'}>Empresa</Link>
+                    <Link href={'/servicios'}>Servicios</Link>
+                    <Link href={'/trabajos'}>Trabajos</Link>
+                    <Link href={'/contact'}>Contacto</Link>
+                </nav>
+
+                <HamMenu handleMenu={handleMenu} />
+            </div>
+
+            <MenuMob menuOpen={menuOpen} />
         </div>
     )
 }
