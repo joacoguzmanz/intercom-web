@@ -50,7 +50,7 @@ const Nav = () => {
             <div className='px-5 md:px-16 lg:px-32 py-2.5 md:py-5 flex items-center justify-between gap-1 md:gap-15 bg-white'>
                 <Link href={'/'} className='text-2xl font-semibold'>InterCom.</Link>
 
-                <nav className='hidden md:flex md:gap-2.5 md:mr-2.5'>
+                <nav className='hidden md:flex md:gap-2.5 lg:gap-14 md:mr-2.5'>
                     <Link href={'/empresa'}>Empresa</Link>
                     <Link href={'/servicios'}>Servicios</Link>
                     <Link href={'/trabajos'}>Trabajos</Link>
