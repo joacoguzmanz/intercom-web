@@ -24,7 +24,7 @@ const Hero = () => {
                        className={'hidden md:group-hover/thi:block md:group-hover/thi:absolute md:group-hover/thi:z-50 md:group-hover/thi:top-0 md:group-hover/thi:-left-6 rounded-lg'} />
             </span>
 
-            <p className='text-center text-lg'>Empresa con más de 20 años de experiencia especializada en trabajos para consorcios.</p>
+            <p className='md:text-center text-lg'>Empresa con más de 20 años de experiencia especializada en trabajos para consorcios.</p>
         </div>
     )
 }

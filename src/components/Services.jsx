@@ -9,26 +9,70 @@ const services = [
 
 const Services = () => {
     return (
-        <div className='py-16 lg:py-36 px-5 md:px-16 lg:px-32 flex flex-col gap-10'>
-            <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='rounded-xl' />
-            <div>
-                <div className='inline-block border border-gray-800 rounded-full text-sm font-light px-4 py-0.5 mb-3'>
-                    <p>Portería IP</p>
+        <div className='py-16 lg:py-36 px-5 md:px-16 lg:px-32 flex flex-col gap-32 md:gap-48'>
+            <div className='flex flex-col md:flex-row gap-10'>
+                <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='rounded-xl md:w-6/12' />
+                <div className='md:w-6/12 md:flex md:flex-col md:justify-between'>
+                    <div>
+                        <div className='inline-block border border-gray-800 rounded-full font-light px-4 py-0.5 mb-3'>
+                            <p className='text-sm'>Portería IP</p>
+                        </div>
+                        <h3 className='text-2xl md:text-4xl font-semibold mb-5'>Soluciones IP para consorcios</h3>
+                        <p className='text-gray-600 mb-5'>Los porteros IP presentan numerosos beneficios para los consorcios.</p>
+                    </div>
+                    <div className='md:mb-10'>
+                        <p className='text-gray-600 mb-5'>¿Por qué elegir porteros IP frente a los tradicionales?</p>
+                        <ul className='list-disc list-inside'>
+                            <li className='mb-2.5'>Ahorro en gastos de mantenimiento</li>
+                            <li className='mb-2.5'>Recepción de llamados en celular o tablet</li>
+                            <li className='mb-2.5'>Garantía 6 meses</li>
+                        </ul>
+                    </div>
                 </div>
-                <h3 className='text-2xl font-semibold mb-5'>Soluciones IP para consorcios</h3>
-                <p className='text-gray-600 mb-5'>Los porteros IP presentan numerosos beneficios para los consorcios.</p>
-                <ul className='list-disc list-inside'>
-                    <li className='mb-2.5'>Ahorro en gastos de mantenimiento</li>
-                    <li className='mb-2.5'>Recepción de llamados en celular o tablet</li>
-                    <li className='mb-2.5'>Garantía 6 meses</li>
-                </ul>
+            </div>
+
+            <div className='flex flex-col md:flex-row gap-10'>
+                <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='rounded-xl md:w-6/12' />
+                <div className='md:w-6/12 md:flex md:flex-col md:justify-between'>
+                    <div>
+                        <div className='inline-block border border-gray-800 rounded-full font-light px-4 py-0.5 mb-3'>
+                            <p className='text-sm'>Cámaras de seguridad</p>
+                        </div>
+                        <h3 className='text-2xl md:text-4xl font-semibold mb-5'>Monitoreo en tiempo real desde cualquier lugar</h3>
+                        <p className='text-gray-600 mb-5'>Instalación de sistemas de cámaras IP o convencionales conectados a internet</p>
+                    </div>
+                    <div className='md:mb-10'>
+                        <p className='text-gray-600 mb-5'>Algunos beneficios de nuestros sistemas de videovigilancia</p>
+                        <ul className='list-disc list-inside'>
+                            <li className='mb-2.5'>Cámaras Full HD Dahua primera calidad</li>
+                            <li className='mb-2.5'>Conectate a las cámaras por internet desde cualquier lugar</li>
+                            <li className='mb-2.5'>Almacenamiento de grabaciones de hasta 30 días</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex flex-col md:flex-row gap-10'>
+                <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='rounded-xl md:w-6/12' />
+                <div className='md:w-6/12 md:flex md:flex-col md:justify-between'>
+                    <div>
+                        <div className='inline-block border border-gray-800 rounded-full font-light px-4 py-0.5 mb-3'>
+                            <p className='text-sm'>Porteros Eléctricos</p>
+                        </div>
+                        <h3 className='text-2xl md:text-4xl font-semibold mb-5'>El clásico portero de toda la vida</h3>
+                        <p className='text-gray-600 mb-5'>Nuestra especialidad. Tenemos la solución para cualquier problema de su portero.</p>
+                    </div>
+                    <div className='md:mb-10'>
+                        <p className='text-gray-600 mb-5'>Más de 15 años de experiencia nos permiten ofrecerles las siguientes soluciones:</p>
+                        <ul className='list-disc list-inside'>
+                            <li className='mb-2.5'>Reparación de corto circuitos generales</li>
+                            <li className='mb-2.5'>Reposición de frente de calle por vandalismo</li>
+                            <li className='mb-2.5'>Renovación o instalación en obra de porteros</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        // <div id='servicios' className='py-32 flex flex-col gap-10 lg:flex-row md:mx-6 md:gap-10'>
-        //     { services.map((service, i) => {
-        //         return <Card title={service.title} desc={service.desc} list={service.list} image={service.image} key={i} />
-        //     }) }
-        // </div>
     )
 }
 
