@@ -2,7 +2,7 @@ import Nav from "../components/navigation/Nav.jsx";
 import Hero from "../components/Hero.jsx";
 import Services from "../components/Services.jsx";
 import Clients from "../components/Clients.jsx";
-import Contact from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
 import BrandSlider from "../components/BrandSlider.jsx";
 import About from "../components/About.jsx";
 
@@ -15,7 +15,7 @@ const HomePage = () => {
             <Clients />
             <About />
             <Services />
-            <Contact />
+            <Footer />
         </div>
     )
 }

@@ -42,9 +42,9 @@ const Nav = () => {
 
     return (
         <div className='fixed z-50 w-full'>
-            <div className='bg-[#D9E8F5] w-full px-5 md:px-16 lg:px-32 py-2.5 text-sm md:text-md flex justify-between md:justify-end md:gap-10'>
-                <a href={'mailto:arturogusman@hotmail.com'} className='text-[#304269]'>arturogusman@hotmail.com</a>
-                <a href={'https://wa.me/5491155116365'} target='_blank' className='text-[#304269]'>+54 9 11 6225-6864</a>
+            <div className='bg-primary w-full px-5 md:px-16 lg:px-32 py-2.5 text-sm md:text-md flex justify-between md:justify-end md:gap-10'>
+                <a href={'mailto:arturogusman@hotmail.com'} className='text-white'>arturogusman@hotmail.com</a>
+                <a href={'https://wa.me/5491155116365'} target='_blank' className='text-white'>+54 9 11 6225-6864</a>
             </div>
 
             <div className='px-5 md:px-16 lg:px-32 py-2.5 md:py-5 flex items-center justify-between gap-1 md:gap-15 bg-white'>
@@ -54,7 +54,7 @@ const Nav = () => {
                     <Link href={'/empresa'}>Empresa</Link>
                     <Link href={'/servicios'}>Servicios</Link>
                     <Link href={'/trabajos'}>Trabajos</Link>
-                    <Link href={'/contact'}>Contacto</Link>
+                    <Link href={'/contacto'}>Contacto</Link>
                 </nav>
 
                 <HamMenu handleMenu={handleMenu} />
