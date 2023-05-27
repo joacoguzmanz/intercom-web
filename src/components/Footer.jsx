@@ -1,40 +1,32 @@
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
     return (
-        <div className='px-5 md:px-16 lg:px-32'>
-            <div className='min-h-[50vh] rounded-t-2xl bg-blue-800 text-white px-5 py-10 md:flex md:justify-between'>
-                <Link href={'/'} className='text-2xl font-semibold'>InterCom.</Link>
-                <div className='grid grid-cols-2 md:grid-cols-3 gap-5 mt-5 md:mt-0 md:gap-20'>
-                    <div>
-                        <h4 className='font-medium mb-2.5'>Servicios</h4>
-                        <div className='flex flex-col gap-2.5'>
-                            <Link href={'/servicios'} className='uppercase'>Portería IP</Link>
-                            <Link href={'/servicios'} className='uppercase'>Camaras de seguridad</Link>
-                            <Link href={'/servicios'} className='uppercase'>Porteros eléctricos</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 className='font-medium mb-2.5'>Links</h4>
-                        <div className='flex flex-col gap-2.5'>
-                            <Link href={'/'} className='uppercase'>Home</Link>
-                            <Link href={'/empresa'} className='uppercase'>empresa</Link>
-                            <Link href={'/servicios'} className='uppercase'>Servicios</Link>
-                            <Link href={'/trabajos'} className='uppercase'>Trabajos</Link>
-                            <Link href={'/contacto'} className='uppercase'>Contacto</Link>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 className='font-medium mb-2.5'>Contacto</h4>
-                        <div className='flex flex-col gap-2.5'>
-                            <a href={'mailto:arturogusman@hotmail.com'}>MAIL</a>
-                            <a href={'https://wa.me/5491155116365'} target='_blank'>WHATSAPP</a>
-                            <a href={'https://www.instagram.com/portero.electrico/'} target='_blank'>INSTAGRAM</a>
-                        </div>
-                    </div>
+        <footer className='relative bg-gray-200 px-5 md:px-16 lg:px-32 py-10'>
+            <div className='border border-black w-11/12 mx-auto -mt-16 mb-8 p-2.5 rounded-md'>
+                <p>Contactanos, estamos para lo que necesites</p>
+                <h4 className='font-medium text-lg text-center'>Contactanos</h4>
+            </div>
+            <Link href={'/'} className='text-2xl font-semibold'>InterCom.</Link>
+            <div className='md:flex md:gap-16'>
+                <div className='flex flex-col gap-1.5 mt-5'>
+                    <h4 className='font-medium text-lg'>Info</h4>
+                    <p>🇦🇷 Ciudad de Buenos Aires | 🇪🇸 Barcelona</p>
+                    <a href={'mailto:arturogusman@hotmail.com'}><FontAwesomeIcon className={'mr-2'} icon={faAt} />arturogusman@hotmail.com</a>
+                    <a href={'https://wa.me/5491155116365'} target='_blank'><FontAwesomeIcon className={'mr-2'} icon={faWhatsapp} />+54 9 11 5511 6365</a>
+                    <a href={'https://www.instagram.com/portero.electrico/'} target='_blank'><FontAwesomeIcon className={'mr-2'} icon={faInstagram} />@portero.electrico</a>
+                </div>
+                <div className='flex flex-col gap-1.5 mt-5'>
+                    <h4 className='font-medium text-lg'>Links</h4>
+                    <Link href={'/empresa'}>Empresa</Link>
+                    <Link href={'/servicios'}>Servicios</Link>
+                    <Link href={'/trabajos'}>Trabajos</Link>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 }
 
