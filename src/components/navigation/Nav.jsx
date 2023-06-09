@@ -1,6 +1,4 @@
 import HamMenu from "./HamMenu.jsx";
-import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState, useEffect } from "react";

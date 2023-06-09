@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className='bg-[#00B087E6] rounded-3xl mx-4 mb-4 px-5 md:px-16 lg:px-32 py-10'>
+        <footer className='bg-blue-300 rounded-3xl mx-4 mb-4 px-5 md:px-16 lg:px-32 py-10 md:pt-14'>
             <div className='flex flex-col md:flex md:flex-row md:justify-between '>
                 <div className='flex flex-col md:block md:flex-1'>
                     <Link href={'/'} className='text-2xl font-semibold'>InterCom.</Link>
@@ -24,11 +24,13 @@ const Footer = () => {
                     <h4 className='font-medium text-lg'>Contacto</h4>
                     <a href={'mailto:arturogusman@hotmail.com'}>arturogusman@hotmail.com</a>
                     <a href={'https://wa.me/5491155116365'} target='_blank'>+54 9 11 5511 6365</a>
-                    <p>Ciudad de Buenos Aires 🇦🇷 | Barcelona 🇪🇸</p>
+                    <p>Ciudad de Buenos Aires 🇦🇷</p>
+                    <p>Barcelona 🇪🇸</p>
                 </div>
             </div>
-            <div className='border-t mt-8 pt-8 md:mt-40'>
-                <p className='text-center text-md font-light'>© 2023 InterCom. Todos los derechos reservados.</p>
+            <div className='border-t border-t-blue-800 mt-8 pt-8 flex flex-col gap-2.5 md:gap-0 md:flex-row md:justify-between md:mt-40'>
+                <p className='text-sm font-light'>© 2023 InterCom. Todos los derechos reservados.</p>
+                <p className='text-sm font-light'>Made by JoacoGuzman</p>
             </div>
         </footer>
     );
