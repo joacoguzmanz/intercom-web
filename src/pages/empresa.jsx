@@ -6,36 +6,50 @@ const Empresa = () => {
     return (
         <>
             <Nav />
-            <div className='pt-60 mx-5 md:mx-20'>
-                <h2>El titulo</h2>
-                <h4>Pequeño subtitulo voy a agregar acá. Este es solo de prueba.</h4>
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-5 lg:grid-rows-2 gap-4 lg:gap-x-5'>
-                    <div className='col-span-1 row-span-1 bg-gray-400 rounded-2xl h-52 lg:h-96 lg:mt-10'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='h-full rounded-xl md:w-full' />
+
+            <section className='lg:py-60 lg:px-20 pt-60 px-5'>
+                <div className='flex flex-col items-center gap-y-5'>
+                    <h1 className='text-3xl lg:text-5xl font-bold'>Empresa</h1>
+                    <p className='text-lg lg:text-2xl mb-10'>Lorem ipsum dolor sit amet consectetur adi pisicing elit. Quisquam, voluptatum.</p>
+                </div>
+
+                <div className='grid grid-cols-2 sm:block sm:columns-2 md:columns-3 lg:columns-4 gap-x-5 md:gap-x-8'>
+                    <div className='inline-block w-full mt-5 relative h-52 lg:h-96 sm:first:mt-24'>
+                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
-                    <div className='col-span-1 row-span-1 bg-gray-400 rounded-2xl h-52 lg:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='h-full rounded-xl md:w-full' />
+                    <div className='inline-block w-full mt-5'>
+                        <div className='bg-blue-300 relative rounded-xl p-6 sm:p-8 lg:py-[60%] h-full flex flex-col'>
+                            <p className='lg:absolute lg:top-8 lg:inset-x-8 mb-4 lg:mb-0'>20 años</p>
+                            <p className='mt-auto lg:absolute lg:bottom-8 lg:inset-x-8'>de trayectoria</p>
+                        </div>
                     </div>
-                    <div className='col-span-2 md:col-span-1 row-span-1 bg-[#92C5FD] rounded-2xl h-52 lg:h-96 lg:mt-32 flex flex-col justify-between p-6'>
-                        <p>20 años</p><p>de trayectoria</p>
+                    <div className='col-span-2 inline-block w-full mt-5'>
+                        <div className='bg-green-300 relative rounded-xl p-6 sm:p-8 lg:py-[60%] h-full flex flex-col'>
+                            <p className='lg:absolute lg:top-8 lg:inset-x-8 mb-4 lg:mb-0'>20 años</p>
+                            <p className='mt-auto lg:absolute lg:bottom-8 lg:inset-x-8'>de trayectoria</p>
+                        </div>
                     </div>
-                    <div className='col-span-1 row-span-1 bg-gray-400 rounded-2xl h-52 lg:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='h-full rounded-xl md:w-full' />
+                    <div className='inline-block w-full mt-5 relative h-52 lg:h-96'>
+                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
-                    <div className='col-span-1 row-span-1 bg-gray-400 rounded-2xl h-52 lg:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='h-full rounded-xl md:w-full' />
+                    <div className='inline-block w-full mt-5 relative h-52 lg:h-96 [&:nth-child(5)]:xl:mt-52'>
+                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
-                    <div className='col-span-1 row-span-1 bg-[#28E09A] rounded-2xl h-52 lg:h-96 flex flex-col justify-between p-6'>
-                        <p>2000+ trabajos</p><p>en los últimos 3 años</p>
+                    <div className='inline-block w-full mt-5 relative h-52 lg:h-96'>
+                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
-                    <div className='col-span-1 row-span-1 bg-[#FE9314] rounded-2xl h-52 lg:h-96 flex flex-col justify-between p-6'>
-                        <p>Más de 40 años</p><p>Dejame y te consulto</p>
+                    <div className='col-span-2 inline-block w-full mt-5 order-last [&:nth-last-child(2)]:xl:mt-32'>
+                        <div className='bg-amber-300 relative rounded-xl p-6 sm:p-8 lg:py-[60%] h-full flex flex-col'>
+                            <p className='lg:absolute lg:top-8 lg:inset-x-8 mb-4 lg:mb-0'>20 años</p>
+                            <p className='mt-auto lg:absolute lg:bottom-8 lg:inset-x-8'>de trayectoria</p>
+                        </div>
                     </div>
-                    <div className='col-span-2 md:col-span-1 row-span-1 bg-gray-400 rounded-2xl h-52 lg:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='h-full rounded-xl md:w-full' />
+                    <div className='inline-block w-full mt-5 relative h-52 lg:h-96'>
+                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
                 </div>
-            </div>
+            </section>
+
             <Footer />
         </>
     )
