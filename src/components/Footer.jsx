@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className='bg-blue-300 rounded-3xl mx-4 mb-4 px-5 md:px-16 lg:px-32 py-10 md:pt-14'>
+        <footer className='bg-blue-300 rounded-3xl mx-4 my-4 px-5 md:px-16 lg:px-32 py-10 md:pt-14'>
             <div className='flex flex-col md:flex md:flex-row md:justify-between '>
                 <div className='flex flex-col md:block md:flex-1'>
                     <Link href={'/'} className='text-2xl font-semibold'>InterCom.</Link>
