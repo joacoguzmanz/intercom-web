@@ -2,6 +2,17 @@ import Nav from "../components/navigation/Nav.jsx";
 import Footer from "../components/Footer.jsx";
 import HeadSeo from "../components/HeadSeo.jsx";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faBrain,
+    faHandshake,
+    faAward,
+    faMagnifyingGlass,
+    faUserCheck,
+    faClock,
+    faGlobe
+} from "@fortawesome/free-solid-svg-icons";
+import {motion} from "framer-motion";
 
 const Empresa = () => {
     return (
@@ -63,35 +74,45 @@ const Empresa = () => {
 
             <section className='py-20 px-5 lg:py-40 lg:px-20'>
                 <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5'>
-                    <div className='border p-5 rounded-2xl'>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <FontAwesomeIcon icon={faBrain} className='text-primary bg-orange-200 p-3.5 rounded-full mb-3' />
                         <h4 className='text-lg font-medium mb-3'>Capacitación constante</h4>
                         <p>Ampliamos nuestros conocimientos constantemente para ofrecer siempre la mejor solución</p>
-                    </div>
-                    <div className='border p-5 rounded-2xl'>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <FontAwesomeIcon icon={faHandshake} className='text-primary bg-orange-200 p-3.5 rounded-full mb-3' />
                         <h4 className='text-lg font-medium mb-3'>Alianzas estratégicas</h4>
                         <p>Buscamos a los proveedores más confiables para asegurar la mejor calidad y precio posible</p>
-                    </div>
-                    <div className='border p-5 rounded-2xl'>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className='text-primary bg-orange-200 p-3.5 rounded-full mb-3' />
                         <h4 className='text-lg font-medium mb-3'>Atención al detalle</h4>
                         <p>Un buen trabajo no solo funciona pero se ve bien, no hay lugar para cables sueltos por cualquier lado</p>
-                    </div>
-                    <div className='border p-5 rounded-2xl'>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <FontAwesomeIcon icon={faUserCheck} className='text-primary bg-orange-200 p-3.5 rounded-full mb-3' />
                         <h4 className='text-lg font-medium mb-3'>Satisfacción del cliente</h4>
                         <p>Asesoramos a los consorcios para garantizar un trabajo que deje conforme a los propietarios</p>
-                    </div>
-                    <div className='border p-5 rounded-2xl'>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <FontAwesomeIcon icon={faGlobe} className='text-primary bg-orange-200 p-3.5 rounded-full mb-3' />
                         <h4 className='text-lg font-medium mb-3'>Amplia gama de marcas</h4>
                         <p>Trabajamos tanto con marcas nacionales como importadas, un gran abanico de tecnologías</p>
-                    </div>
-                    <div className='border p-5 rounded-2xl'>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <FontAwesomeIcon icon={faClock} className='text-primary bg-orange-200 p-3.5 rounded-full mb-3' />
                         <h4 className='text-lg font-medium mb-3'>Respuesta rápida</h4>
                         <p>Respondemos a la brevedad y solucionamos los problemas lo antes posible</p>
-                    </div>
-                    <div className='border p-5 rounded-2xl'>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <FontAwesomeIcon icon={faAward} className='text-primary bg-orange-200 p-3.5 rounded-full mb-3' />
                         <h4 className='text-lg font-medium mb-3'>Marcas de primera calidad</h4>
-                        <p>Nos gusta trabajar con productos buenos y duraderos, para </p>
-                    </div>
-                    <div className='border p-5 rounded-2xl'>sdflja</div>
+                        <p>Nos gusta trabajar con productos buenos y duraderos. </p>
+                    </motion.div>
+                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
+                        <h4 className='text-lg font-medium mb-3'>Marcas de primera calidad</h4>
+                        <p>Nos gusta trabajar con productos buenos y duraderos. </p>
+                    </motion.div>
                 </div>
             </section>
 
