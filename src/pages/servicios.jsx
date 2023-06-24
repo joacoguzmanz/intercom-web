@@ -23,7 +23,7 @@ const Servicios = () => {
                 </div>
                 <div className='flex flex-col md:flex-row md:justify-center md:gap-10'>
                     <div className='relative w-full md:w-5/12 h-64 md:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill={true} style={{objectFit:"cover"}} className='rounded-lg' />
+                        <Image src={'/imgs/caja-conexiones.jpeg'} alt={'Portero eléctrico'} fill={true} style={{objectFit:"cover"}} className='rounded-lg' />
                     </div>
                     <div className='md:mb-10 md:text-lg md:w-5/12'>
                         <p className='mt-5 mb-3'>Los porteros IP presentan numerosos beneficios para los consorcios.</p>
@@ -43,7 +43,7 @@ const Servicios = () => {
                 </div>
                 <div className='flex flex-col md:flex-row md:justify-center md:gap-10'>
                     <div className='relative w-full md:w-5/12 h-64 md:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill={true} style={{objectFit:"cover"}} className='rounded-lg' />
+                        <Image src={'/imgs/sistema-akuvox.jpeg'} alt={'Portero eléctrico'} fill={true} style={{objectFit:"cover"}} className='rounded-lg' />
                     </div>
                     <div className='md:mb-10 md:text-lg md:w-5/12'>
                         <p className='mt-5 mb-3'>Monitoreo en tiempo real desde cualquier lugar. Instalación de sistemas de cámaras IP o convencionales conectados a internet</p>
