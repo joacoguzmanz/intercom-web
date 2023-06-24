@@ -37,7 +37,7 @@ const Empresa = () => {
 
                 <div className='grid grid-cols-2 sm:block sm:columns-2 md:columns-3 lg:columns-4 gap-x-5 md:gap-x-8'>
                     <div className='inline-block w-full mt-5 relative h-52 lg:h-96 sm:first:mt-20'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
+                        <Image src={'/imgs/frente-surix.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
                     <div className='inline-block w-full mt-5'>
                         <div className='bg-blue-300 relative rounded-xl p-6 sm:p-8 lg:py-[60%] h-full flex flex-col'>
@@ -52,13 +52,13 @@ const Empresa = () => {
                         </div>
                     </div>
                     <div className='inline-block w-full mt-5 relative h-52 lg:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
+                        <Image src={'/imgs/anverso-surix.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
                     <div className='inline-block w-full mt-5 relative h-52 lg:h-96 [&:nth-child(5)]:xl:mt-36'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
+                        <Image src={'/imgs/caja-conexiones.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
                     <div className='inline-block w-full mt-5 relative h-52 lg:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
+                        <Image src={'/imgs/frente-fermax.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
                     <div className='col-span-2 inline-block w-full mt-5 order-last [&:nth-last-child(2)]:xl:mt-24'>
                         <div className='bg-amber-300 relative rounded-xl p-6 sm:p-8 lg:py-[60%] h-full flex flex-col'>
@@ -67,7 +67,7 @@ const Empresa = () => {
                         </div>
                     </div>
                     <div className='inline-block w-full mt-5 relative h-52 lg:h-96'>
-                        <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
+                        <Image src={'/imgs/conexiones-cajita.jpeg'} alt={'Portero eléctrico'} fill style={{objectFit: 'cover'}} className='rounded-xl' />
                     </div>
                 </div>
             </section>
@@ -109,10 +109,10 @@ const Empresa = () => {
                         <h4 className='text-lg font-medium mb-3'>Marcas de primera calidad</h4>
                         <p>Nos gusta trabajar con productos buenos y duraderos. </p>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>
-                        <h4 className='text-lg font-medium mb-3'>Marcas de primera calidad</h4>
-                        <p>Nos gusta trabajar con productos buenos y duraderos. </p>
-                    </motion.div>
+                    {/*<motion.div whileHover={{ scale: 1.1 }} className='border p-5 rounded-2xl'>*/}
+                    {/*    <h4 className='text-lg font-medium mb-3'>Marcas de primera calidad</h4>*/}
+                    {/*    <p>Nos gusta trabajar con productos buenos y duraderos. </p>*/}
+                    {/*</motion.div>*/}
                 </div>
             </section>
 

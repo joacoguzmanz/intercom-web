@@ -11,7 +11,9 @@ const Services = () => {
     return (
         <div className='py-16 lg:py-36 px-5 md:px-16 lg:px-32 flex flex-col gap-32 md:gap-48'>
             <div className='flex flex-col md:flex-row gap-10'>
-                <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='rounded-xl md:w-6/12' />
+                <div className='relative w-full h-60 md:w-[580px] md:h-[434px]'>
+                    <Image src={'/imgs/frente-fermax.jpeg'} alt={'Portero eléctrico Fermax'} fill={true} style={{objectFit:'cover'}} className='rounded-xl' />
+                </div>
                 <div className='md:w-6/12 md:flex md:flex-col md:justify-between'>
                     <div>
                         <div className='inline-block border border-gray-800 rounded-full font-light px-4 py-0.5 mb-3'>
@@ -32,7 +34,9 @@ const Services = () => {
             </div>
 
             <div className='flex flex-col md:flex-row gap-10'>
-                <Image src={'/imgs/portero.jpeg'} alt={'Portero eléctrico'} width={500} height={500} className='rounded-xl md:w-6/12' />
+                <div className='relative w-full h-60 md:w-[580px] md:h-[434px]'>
+                    <Image src={'/imgs/sistema-akuvox.jpeg'} alt={'Sistema de camaras de seguridad'} fill={true} style={{objectFit:'cover'}} className='rounded-xl' />
+                </div>
                 <div className='md:w-6/12 md:flex md:flex-col md:justify-between'>
                     <div>
                         <div className='inline-block border border-gray-800 rounded-full font-light px-4 py-0.5 mb-3'>
