@@ -41,7 +41,7 @@ const Nav = () => {
     return (
         <div className='fixed z-50 w-full'>
             <div className='bg-primary w-full px-5 md:px-16 lg:px-32 py-2.5 text-sm md:text-md flex justify-between md:justify-end md:gap-10'>
-                <a href={'mailto:arturogusman@hotmail.com'} className='text-white'>arturogusman@hotmail.com</a>
+                <a href={'mailto:arturogusman@hotmail.com'} className='text-white'>intercom@porteroelectrico.com</a>
                 <a href={'https://wa.me/5491155116365'} target='_blank' className='text-white'>+54 9 11 6225-6864</a>
             </div>
 
