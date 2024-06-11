@@ -51,7 +51,6 @@ const Nav = () => {
                 <nav className='hidden md:flex md:gap-2.5 lg:gap-14 md:mr-2.5'>
                     <Link href={'/empresa'}>Empresa</Link>
                     <Link href={'/servicios'}>Servicios</Link>
-                    <Link href={'/trabajos'}>Trabajos</Link>
                     <Link href={'/contacto'}>Contacto</Link>
                 </nav>
 
